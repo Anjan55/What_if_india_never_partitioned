@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <title>What-If Scenario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>What-If Scenario Engine</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="impacts.html">Impacts</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Select a Scenario</h2>
+    <button onclick="showOutcome('Political Unity')">Political Unity</button>
+    <button onclick="showOutcome('Economic Growth')">Economic Growth</button>
+    <button onclick="showOutcome('Social Harmony')">Social Harmony</button>
+
+    <p id="result"></p>
+</section>
+
+<footer>
+    <p>Interactive Scenario Module</p>
+</footer>
+
+</body>
+<script>
+function showOutcome(scenario) {
+    const result = document.getElementById("result");
+
+    if (scenario === "Political Unity") {
+        result.innerHTML = `
+            <h3>Political Unity</h3>
+            <p>
+                If India had never been partitioned, political unity would have
+                resulted in a strong and inclusive federal system. The absence of
+                border conflicts and regional disputes could have strengthened
+                democratic institutions, improved governance, and allowed the
+                government to focus on nation-building rather than military tensions.
+                In a united India, a robust federal structure integrates princely states seamlessly 
+                under leaders like Patel, balancing Hindu-majority and Muslim regions through proportional 
+                representation and autonomies for Punjab and Bengal. No Indo-Pak wars save trillions 
+                in defense spending, fostering stable coalitions and preventing Kashmir insurgencies, 
+                though linguistic and regional tensions might test central authority.
+            </p>
+        `;
+    }
+
+    else if (scenario === "Economic Growth") {
+        result.innerHTML = `
+            <h3>Economic Growth</h3>
+            <p>
+                A united India would have benefited from shared resources,
+                integrated markets, and uninterrupted trade routes. Industrial
+                growth would have accelerated through combined agricultural,
+                mineral, and port resources, potentially positioning India as a
+                global economic power much earlier in history.Combined resources 
+                like Punjab's grains, Sindh's ports, and Bengal's jute enable 
+                self-sufficient agriculture and textiles from day one, dodging 
+                refugee crises and border trade barriers. Savings from absent 
+                wars fuel dams, rails, and industries linking Karachi to Madras, 
+                accelerating GDP growth to superpower levels by the 1980s, though 
+                overpopulation strains per capita gains.
+            </p>
+        `;
+    }
+
+    else if (scenario === "Social Harmony") {
+        result.innerHTML = `
+            <h3>Social Harmony</h3>
+            <p>
+                Without partition, large-scale migration and communal violence
+                could have been avoided. Cultural coexistence among different
+                religions and communities might have strengthened national unity,
+                promoted social stability, and fostered a shared identity across
+                the subcontinent.Avoiding partition's 15 million displacements 
+                and million deaths allows syncretic cultures to flourish—shared 
+                Urdu-Hindi literature, interfaith festivals from Lahore to Lucknow, 
+                and fluid migrations for education and jobs. Caste reforms and women's 
+                literacy advance faster with undivided resources, but managing 400 
+                million diverse people could spark caste or tribal agitations 
+                without partition's divisions as a buffer.
+            </p>
+        `;
+    }
+}
+</script>
+
+</html>

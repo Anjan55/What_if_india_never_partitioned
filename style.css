@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #0b3d91;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+
+.content {
+    padding: 30px;
+    background: white;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* ANIMATION EFFECTS */
+.fade {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* MAP SIZE CONTROL */
+.map-section {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.india-map {
+    width: 100%;
+    max-width: 650px;   
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+.map-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.timeline {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.timeline input[type="range"] {
+    width: 100%;
+    margin: 15px 0;
+}
+.hero {
+  background: linear-gradient(135deg, #0b3c88, #1e5ab6);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 { font-size: 42px; margin-bottom: 15px; }
+.hero p { font-size: 18px; opacity: 0.9; }
+.card-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  margin: 20px 0;
+}
+.card-box {
+  transition: transform 0.3s;
+}
+.card-box:hover {
+  transform: translateY(-5px);
+}
+
